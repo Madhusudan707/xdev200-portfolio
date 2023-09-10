@@ -41,17 +41,17 @@ export const devData = {
     {
       id: 1,
       content:
-        "Computer Science Engineer having interest in web-designing and development with an eye for detail.",
+        "👋 I'm a Jamshedpur-native with a deep passion for entrepreneurship and web development. Armed with expertise in HTML, CSS, JavaScript, Node.js, and React, I specialize in crafting high-performance web applications that seamlessly blend design and technology.",
     },
     {
       id: 2,
       content:
-        "I'm also a big fan of React.js and have around 6 years experience with it. I have also fiddled with Ruby on Rails and Elixir.",
+        "🚀 One of my most significant accomplishments includes co-founding a startup and managing it for a successful three-year run. In just nine months, I took the product from inception to a thriving ecosystem with 25+ merchants and a loyal customer base of 1500+.",
     },
     {
-      id: 2,
+      id: 3,
       content:
-        "Though I spend most of my time writing code for building User Interfaces, I've also fiddled with many Back-end technologies. I like enjoying working in the intersection of design and development. I feel most productive when I'm able to design User Interfaces which not only look good but has a good performance as well.",
+        "🌟 I have over five years of frontend development experience and a passion for pushing the boundaries of web design with React.js. Beyond coding, you'll find me engaged in ♟️ chess battles, savoring 🎬 movies, and grooving 🎵 to music with friends. I'm a detail-oriented computer science engineer committed to excellence in every project. Let's create something extraordinary together!",
     },
   ],
 };
