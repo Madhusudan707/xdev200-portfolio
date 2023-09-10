@@ -6,4 +6,5 @@ export {
   ProfileImage,
 } from "@/components/Reusable";
 export { NavBar } from "@/components/NavBar/NavBar";
-export { Landing } from "@/components/Page";
+export { Card, CardItems } from "@/components/Card";
+export { Landing, AboutMe, Projects } from "@/components/Page";

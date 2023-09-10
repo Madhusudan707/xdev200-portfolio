@@ -28,3 +28,13 @@ export type FlexBoxContainerProps = {
   className: string | undefined;
   children: ReactNode;
 };
+
+export type CardProps = {
+  id: number;
+  name: string;
+  description: string;
+  githubUrl: string;
+  demoUrl: string;
+  npmUrl: string;
+  lang: string[];
+};

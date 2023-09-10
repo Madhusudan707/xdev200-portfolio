@@ -4,7 +4,7 @@ import { assetPath, devData, navbarData } from "@/LocalData";
 import Image from "next/image";
 export const NavBar: React.FC = () => {
   return (
-    <nav className="bg-white px-4 py-2 w-full shadow-md">
+    <nav className="bg-white px-4 py-2 w-full shadow-md fixed  ">
       <FlexBoxContainer className=" flex items-center justify-between w-full ">
         <Link href="/">
           <Image
