@@ -51,7 +51,7 @@ export const devData = {
     {
       id: 3,
       content:
-        "🌟 I have over five years of frontend development experience and a passion for pushing the boundaries of web design with React.js. Beyond coding, you'll find me engaged in ♟️ chess battles, savoring 🎬 movies, and grooving 🎵 to music with friends. I'm a detail-oriented computer science engineer committed to excellence in every project. Let's create something extraordinary together!",
+        "🌟 I have over five years of frontend development experience and a passion for pushing the boundaries of web design with React.js. Beyond coding, you'll find me engaged in ♟️ chess battles, 🎬 movies, and grooving 🎵 to music with friends. I'm a detail-oriented computer science engineer committed to excellence in every project. Let's create something extraordinary together!",
     },
   ],
 };
