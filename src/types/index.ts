@@ -38,3 +38,7 @@ export type CardProps = {
   npmUrl: string;
   lang: string[];
 };
+
+export type TitleProps = {
+  title: string;
+};

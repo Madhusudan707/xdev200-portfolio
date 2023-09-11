@@ -1,5 +1,10 @@
-import { AboutMe } from "@/components";
+import { AboutMe, Title } from "@/components";
 
-const About = () => <AboutMe />;
+const About = () => (
+  <>
+    <Title title="About" />
+    <AboutMe />
+  </>
+);
 
 export default About;

@@ -1,5 +1,10 @@
-import { Landing } from "@/components";
+import { Landing, Title } from "@/components";
 
-const Home = () => <Landing />;
+const Home = () => (
+  <>
+    <Title title="Home" />
+    <Landing />
+  </>
+);
 
 export default Home;
