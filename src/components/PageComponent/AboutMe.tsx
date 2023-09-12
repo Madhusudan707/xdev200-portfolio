@@ -13,14 +13,14 @@ export const AboutMe = () => {
   return (
     <>
       <Title title="About" />
-      <FlexBoxContainer className="flex-col justify-center items-center gap-y-8 h-screen pt-16">
-        <FlexBoxContainer className="items-center gap-x-6 ">
+      <FlexBoxContainer className="flex-col lg:justify-center lg:items-center gap-y-8 h-screen pt-16">
+        <FlexBoxContainer className="lg:items-center justify-center lg:gap-x-6 ">
           <ProfileImage />
           <FlexBoxContainer className="flex-col">
-            <Heading text={devData.name} className="text-4xl" />
+            <Heading text={devData.name} className="lg:text-4xl text-sm" />
             <Heading
               text={devData.Designation}
-              className="text-xl text-center"
+              className="lg:text-xl text-sm lg:text-center"
             />
             <FlexBoxContainer className="justify-center gap-x-2">
               {devSkills.map(({ id, img48, title }) => (
@@ -37,7 +37,7 @@ export const AboutMe = () => {
           </FlexBoxContainer>
         </FlexBoxContainer>
 
-        <FlexBoxContainer className="flex-col w-6/12 pl-28 gap-y-6">
+        <FlexBoxContainer className="flex-col lg:w-6/12 lg:pl-28 lg:gap-y-6 px-4">
           {devData.AboutMeDetails.map(({ id, content }) => (
             <Paragraph
               key={id}

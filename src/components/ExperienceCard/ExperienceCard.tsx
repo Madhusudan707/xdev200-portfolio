@@ -22,7 +22,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <FlexBoxContainer className="flex-col border px-4 py-2 gap-y-4 rounded-md hover:shadow-lg items-stretch w-11/12">
-      <FlexBoxContainer className=" w-full gap-y-4 ">
+      <FlexBoxContainer className=" lg:flex-row flex-col w-full gap-y-4 ">
         <HeadingExperience
           name={name}
           place={place}

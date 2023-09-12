@@ -5,8 +5,8 @@ import Image from "next/image";
 export const NavBar: React.FC = () => {
   return (
     <nav className="bg-white px-4 py-2 w-full shadow-md fixed  ">
-      <FlexBoxContainer className=" flex items-center justify-between w-full ">
-        <Anchor href="/">
+      <FlexBoxContainer className="  items-center justify-between w-full lg:flex lg:flex-row flex-row-reverse">
+        <Anchor href="/" className="">
           <Image
             src={`${assetPath.path}${devData.profileImgSrc}`}
             alt="logo"
@@ -15,7 +15,7 @@ export const NavBar: React.FC = () => {
             className="w-full h-full object-cover object-center"
           />
         </Anchor>
-        <FlexBoxContainer className="flex gap-x-12">
+        <FlexBoxContainer className="flex lg:gap-x-12 lg:text-sm gap-x-8 text-xs">
           {navbarData.map(
             ({ id, hyperLinkText, link, target, rel, isShow, isDownload }) =>
               isShow && (
