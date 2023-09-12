@@ -1,10 +1,5 @@
-import { Projects, Title } from "@/components";
+import { Projects } from "@/components";
 
-const Project = () => (
-  <>
-    <Title title="Project" />
-    <Projects />
-  </>
-);
+const Project = () => <Projects />;
 
 export default Project;

@@ -3,32 +3,49 @@ export const navbarData = [
     id: 1,
     hyperLinkText: "About",
     link: "/about",
+    target: "",
+    rel: "",
+    isExternal: false,
   },
   {
     id: 2,
-    hyperLinkText: "Projects",
-    link: "/project",
+    hyperLinkText: "Experience",
+    link: "/experience",
+    target: "",
+    rel: "",
+    isExternal: false,
   },
   {
     id: 3,
+    hyperLinkText: "Projects",
+    link: "/project",
+    target: "",
+    rel: "",
+    isExternal: false,
+  },
+  {
+    id: 4,
     hyperLinkText: "Blog",
     link: "https://xdev.hashnode.dev",
     target: "_blank",
     rel: "noopener noreferrer",
-  },
-  {
-    id: 4,
-    hyperLinkText: "GitHub",
-    link: "https://github.com/xdev200",
-    target: "_blank",
-    rel: "noopener noreferrer",
+    isExternal: true,
   },
   {
     id: 5,
+    hyperLinkText: "GitHub",
+    link: "https://github.com/Xdev200",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    isExternal: true,
+  },
+  {
+    id: 6,
     hyperLinkText: "Linkedin",
     link: "https://linkedin.com/in/xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
+    isExternal: true,
   },
 ];
 
@@ -63,56 +80,16 @@ export const assetPath = {
 export const projectData = [
   {
     id: 1,
-    name: "Nano Notes",
-    description: "Digital Sticky Note taking Web App",
-    gitHubUrl: "https://github.com/Madhusudan707/nano-notes/tree/development",
-    demoUrl: "https://nano-notes.netlify.app",
-    npmUrl: "",
-    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "EXPRESSJS", "FIREBASE"],
-  },
-  {
-    id: 2,
-    name: "Startup Reads",
-    description: "A E-commerce Web App",
-    gitHubUrl:
-      "https://github.com/Madhusudan707/startup-reads/tree/development",
-    demoUrl: "https://startup-reads.netlify.app",
-    npmUrl: "",
-    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "EXPRESSJS", "FIREBASE"],
-  },
-  {
-    id: 3,
-    name: "Virtual Card",
-    description: "Optimize data loading using intersection observer",
-    gitHubUrl: "https://github.com/Madhusudan707/virtual_card/tree/development",
-    demoUrl: "https://virtualcard21.netlify.app",
-    npmUrl: "",
-    lang: ["HTML", "CSS", "TAILWIND", "REACTJS"],
-  },
-  {
-    id: 4,
-    name: "DataTable",
-    description: "An Interface to view and delete users",
-    gitHubUrl: "https://github.com/Madhusudan707/datatable/tree/development",
-    demoUrl:
-      "https://github.com/Madhusudan707/datatable/blob/development/admin-ui.gif",
-    npmUrl: "",
-    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "TYPESCRIPT"],
-  },
-  {
-    id: 5,
-    name: "Calendar",
-    description: "Calendar UI",
-    gitHubUrl: "https://github.com/Madhusudan707/google-calendar/tree/dev",
-    demoUrl: "https://xdev-calendar.netlify.app",
-    npmUrl: "",
-    lang: ["HTML", "CSS", "MATERIAL-UI", "REACTJS", "TYPESCRIPT"],
-  },
-
-  {
-    id: 6,
     name: "Personal Task Manager",
     description: "Todo Web App",
+    url: [
+      {
+        gitHubUrl:
+          "https://github.com/Madhusudan707/personal-task-manager/tree/dev",
+        demoUrl: "https://personal-task-manager-eight.vercel.app",
+        npmUrl: "",
+      },
+    ],
     gitHubUrl:
       "https://github.com/Madhusudan707/personal-task-manager/tree/dev",
     demoUrl: "https://personal-task-manager-eight.vercel.app",
@@ -128,10 +105,106 @@ export const projectData = [
     ],
   },
   {
+    id: 2,
+    name: "Nano Notes",
+    description: "Digital Sticky Note taking Web App",
+    url: [
+      {
+        gitHubUrl:
+          "https://github.com/Madhusudan707/nano-notes/tree/development",
+        demoUrl: "https://nano-notes.netlify.app",
+        npmUrl: "",
+      },
+    ],
+    gitHubUrl: "https://github.com/Madhusudan707/nano-notes/tree/development",
+    demoUrl: "https://nano-notes.netlify.app",
+    npmUrl: "",
+    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "EXPRESSJS", "FIREBASE"],
+  },
+  {
+    id: 3,
+    name: "Startup Reads",
+    description: "A E-commerce Web App",
+    url: [
+      {
+        gitHubUrl:
+          "https://github.com/Madhusudan707/startup-reads/tree/development",
+        demoUrl: "https://startup-reads.netlify.app",
+        npmUrl: "",
+      },
+    ],
+    gitHubUrl:
+      "https://github.com/Madhusudan707/startup-reads/tree/development",
+    demoUrl: "https://startup-reads.netlify.app",
+    npmUrl: "",
+    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "EXPRESSJS", "FIREBASE"],
+  },
+  {
+    id: 4,
+    name: "Virtual Card",
+    description: "Optimize data loading using intersection observer",
+    url: [
+      {
+        gitHubUrl:
+          "https://github.com/Madhusudan707/virtual_card/tree/development",
+        demoUrl: "https://virtualcard21.netlify.app",
+        npmUrl: "",
+      },
+    ],
+    gitHubUrl: "https://github.com/Madhusudan707/virtual_card/tree/development",
+    demoUrl: "https://virtualcard21.netlify.app",
+    npmUrl: "",
+    lang: ["HTML", "CSS", "TAILWIND", "REACTJS"],
+  },
+  {
+    id: 5,
+    name: "DataTable",
+    description: "An Interface to view and delete users",
+    url: [
+      {
+        gitHubUrl:
+          "https://github.com/Madhusudan707/datatable/tree/development",
+        demoUrl:
+          "https://github.com/Madhusudan707/datatable/blob/development/admin-ui.gif",
+        npmUrl: "",
+      },
+    ],
+    gitHubUrl: "https://github.com/Madhusudan707/datatable/tree/development",
+    demoUrl:
+      "https://github.com/Madhusudan707/datatable/blob/development/admin-ui.gif",
+    npmUrl: "",
+    lang: ["HTML", "CSS", "TAILWIND", "REACTJS", "TYPESCRIPT"],
+  },
+  {
+    id: 6,
+    name: "Calendar",
+    description: "Calendar UI",
+    url: [
+      {
+        gitHubUrl: "https://github.com/Madhusudan707/google-calendar/tree/dev",
+        demoUrl: "https://xdev-calendar.netlify.app",
+        npmUrl: "",
+      },
+    ],
+    gitHubUrl: "https://github.com/Madhusudan707/google-calendar/tree/dev",
+    demoUrl: "https://xdev-calendar.netlify.app",
+    npmUrl: "",
+    lang: ["HTML", "CSS", "MATERIAL-UI", "REACTJS", "TYPESCRIPT"],
+  },
+
+  {
     id: 7,
     name: "Number System",
     description:
       "A number system conversion App. Supports binary, octal, decimal, and hexadecimal.",
+    url: [
+      {
+        gitHubUrl: "https://github.com/Madhusudan707/ns_npm",
+        demoUrl: "",
+        npmUrl:
+          "https://www.npmjs.com/package/@xdev200/number-system-converter",
+      },
+    ],
     gitHubUrl: "https://github.com/Madhusudan707/ns_npm",
     demoUrl: "",
     npmUrl: "https://www.npmjs.com/package/@xdev200/number-system-converter",
@@ -141,6 +214,13 @@ export const projectData = [
     id: 8,
     name: "Express-Server-CORS",
     description: "NPM package that creates an express server with cors.",
+    url: [
+      {
+        gitHubUrl: "https://github.com/Xdev200/express-server-cors",
+        demoUrl: "",
+        npmUrl: "https://www.npmjs.com/package/@xdev200/express-server-cors",
+      },
+    ],
     gitHubUrl: "https://github.com/Xdev200/express-server-cors",
     demoUrl: "",
     npmUrl: "https://www.npmjs.com/package/@xdev200/express-server-cors",
@@ -151,9 +231,79 @@ export const projectData = [
     name: "Multi-Database Connector",
     description:
       "NPM package for connecting to multiple databases with full customization.",
+    url: [
+      {
+        gitHubUrl: "https://github.com/Xdev200/multi-db-connector",
+        demoUrl: "",
+        npmUrl: "https://www.npmjs.com/package/@xdev200/multi-db-connector",
+      },
+    ],
     gitHubUrl: "https://github.com/Xdev200/multi-db-connector",
     demoUrl: "",
     npmUrl: "https://www.npmjs.com/package/@xdev200/multi-db-connector",
     lang: ["EXPRESSJS", "NPM"],
+  },
+];
+
+export const experienceData = [
+  {
+    id: 1,
+    name: "Saara Inc.",
+    place: "Bangalore",
+    role: "Frontend Engineer",
+    description:
+      "I developed the EcoReturns Consumer Portal from scratch, improved the Merchant Portal, and created a seamless onboarding process. I used ReactJS, Next.js, Tailwind CSS, Bootstrap, and JavaScript. I also contributed to WyseMe and SalesBot projects.",
+    project: [
+      "Consumer Portal",
+      "Merchant Portal",
+      "Consumer Onboarding",
+      "WyseMe",
+      "SalesBot",
+    ],
+    techStack: [
+      "JAVASCRIPT",
+      "REACTJS",
+      "NEXTJS",
+      "TAILWIND",
+      "BOOTSTRAP",
+      "TYPESCRIPT",
+    ],
+    fromDate: "27-Dec-2021",
+    toDate: "01-Sep-2023",
+    isShow: true,
+  },
+  {
+    id: 2,
+    name: "Synoriq R&D Pvt Ltd",
+    place: "Jaipur",
+    role: "Software Engineer 2",
+    description: "",
+    project: ["GoodWorker"],
+    techStack: ["JAVASCRIPT", "REACTJS", "REACT-NATIVE", "BOOTSTRAP"],
+    fromDate: "01-Sep-2021",
+    toDate: "24-Dec-2021",
+    isShow: true,
+  },
+  {
+    id: 3,
+    name: "YorApp Solutions Private Limited",
+    place: "Jamshedpur",
+    role: "CO-Founder and Tech Lead",
+    description:
+      "Responsible for Developing the company's strategy for using technological resources. and ensuring technologies are used efficiently, profitably and securely. Evaluating and implementing new systems and infrastructure.",
+    project: ["YorApp"],
+    techStack: [
+      "PHP",
+      "MYSQL",
+      "JAVASCRIPT",
+      "MATERIALIZE-UI",
+      "HTML",
+      "CSS",
+      "AWS",
+      "FIGMA",
+    ],
+    fromDate: "01-Sep-2018",
+    toDate: "31-Aug-2021",
+    isShow: true,
   },
 ];
