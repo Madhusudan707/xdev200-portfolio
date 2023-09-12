@@ -9,7 +9,7 @@ export const Landing = () => {
         <Heading text={devData.name} className="text-3xl" />
         <Heading text={devData.Designation} className="text-2xl" />
         <Heading
-          text="Passionate about User and Developer Experience."
+          text="Passionate about creating user-friendly web experiences."
           className="text-xl"
         />
       </FlexBoxContainer>
