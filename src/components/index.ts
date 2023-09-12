@@ -5,7 +5,22 @@ export {
   Paragraph,
   ProfileImage,
   Title,
+  Chip,
+  Anchor,
 } from "@/components/Reusable";
 export { NavBar } from "@/components/NavBar/NavBar";
-export { Card, CardItems } from "@/components/Card";
-export { Landing, AboutMe, Projects } from "@/components/Page";
+export { ProjectCard, ProjectCardItems } from "@/components/ProjectCard";
+export {
+  Landing,
+  AboutMe,
+  Projects,
+  Experiences,
+} from "@/components/PageComponent";
+export {
+  ExperienceCard,
+  ExperienceCardItems,
+  HeadingExperience,
+  DescriptionExperience,
+  ProjectExperience,
+  TechStackExperience,
+} from "@/components/ExperienceCard";
