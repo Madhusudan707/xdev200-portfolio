@@ -15,15 +15,18 @@ export const HeadingExperience: React.FC<HeadingExperienceProps> = ({
   description,
 }) => {
   return (
-    <FlexBoxContainer className="flex-col gap-y-2 w-6/12">
-      <FlexBoxContainer className="items-center gap-x-2">
-        <Heading text={`${name},${place}`} className="font-bold text-sm" />
+    <FlexBoxContainer className="flex-col lg:gap-y-2 lg:w-6/12">
+      <FlexBoxContainer className=" flex-col lg:gap-x-2  ">
+        <Heading
+          text={`${name},${place}`}
+          className="font-bold lg:text-sm text-xs"
+        />
         <Paragraph
           text={`[${fromDate} - ${toDate}]`}
-          className="text-xs italic"
+          className="text-xs lg:italic"
         />
       </FlexBoxContainer>
-      <FlexBoxContainer className="text-xs italic">
+      <FlexBoxContainer className="text-xs lg:italic pb-2">
         <Paragraph text={role} />
       </FlexBoxContainer>
       <DescriptionExperience description={description} />

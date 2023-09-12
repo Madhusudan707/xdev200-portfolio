@@ -3,8 +3,8 @@ import { projectData } from "@/LocalData";
 
 export const ProjectCardItems = () => {
   return (
-    <FlexBoxContainer className="flex-col justify-center items-center  h-screen pt-16">
-      <FlexBoxContainer className=" flex-wrap gap-8  justify-center">
+    <FlexBoxContainer className="flex-col justify-center items-center   pt-16 px-4">
+      <FlexBoxContainer className=" lg:flex-wrap lg:flex-row flex-col gap-8  justify-center">
         {projectData.map(
           ({ id, name, description, gitHubUrl, demoUrl, npmUrl, lang }) => {
             return (

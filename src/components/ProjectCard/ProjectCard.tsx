@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<CardProps> = ({
   lang,
 }) => {
   return (
-    <FlexBoxContainer className="flex-col border w-1/4 px-4 py-2 gap-y-4 rounded-md hover:shadow-lg items-stretch">
+    <FlexBoxContainer className="flex-col border lg:w-1/4 px-4 py-2 gap-y-4 rounded-md hover:shadow-lg items-stretch">
       <FlexBoxContainer className="flex-col w-full gap-y-4">
         <FlexBoxContainer className="justify-between items-center">
           <Heading text={name} className="font-bold" />
