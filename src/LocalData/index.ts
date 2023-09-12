@@ -6,6 +6,8 @@ export const navbarData = [
     target: "",
     rel: "",
     isExternal: false,
+    isShow: true,
+    isDownload: false,
   },
   {
     id: 2,
@@ -14,14 +16,18 @@ export const navbarData = [
     target: "",
     rel: "",
     isExternal: false,
+    isShow: true,
+    isDownload: false,
   },
   {
     id: 3,
-    hyperLinkText: "Projects",
+    hyperLinkText: "Demo-Projects",
     link: "/project",
     target: "",
     rel: "",
     isExternal: false,
+    isShow: true,
+    isDownload: false,
   },
   {
     id: 4,
@@ -29,6 +35,9 @@ export const navbarData = [
     link: "https://github.com/Xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
+    isExternal: true,
+    isShow: false,
+    isDownload: false,
   },
   {
     id: 5,
@@ -36,6 +45,9 @@ export const navbarData = [
     link: "https://linkedin.com/in/xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
+    isExternal: true,
+    isShow: false,
+    isDownload: false,
   },
   {
     id: 6,
@@ -43,6 +55,19 @@ export const navbarData = [
     link: "https://xdev.hashnode.dev",
     target: "_blank",
     rel: "noopener noreferrer",
+    isExternal: true,
+    isShow: false,
+    isDownload: false,
+  },
+  {
+    id: 7,
+    hyperLinkText: "CV",
+    link: "https://drive.google.com/file/d/1m3WSgaQzF2jS3WI6npxMuw1ayge8JVYY/view?usp=sharing",
+    target: "",
+    rel: "noopener noreferrer",
+    isExternal: true,
+    isShow: true,
+    isDownload: true,
   },
 ];
 
@@ -53,6 +78,7 @@ export const devExternalInfo = [
     link: "https://github.com/Xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
+    isShow: true,
   },
   {
     id: 2,
@@ -60,14 +86,16 @@ export const devExternalInfo = [
     link: "https://linkedin.com/in/xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
+    isShow: true,
   },
-  // {
-  //   id: 3,
-  //   hyperlink: "Blog",
-  //   link: "https://xdev.hashnode.dev",
-  //   target: "_blank",
-  //   rel: "noopener noreferrer",
-  // },
+  {
+    id: 3,
+    hyperlink: "Blog",
+    link: "https://xdev.hashnode.dev",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    isShow: false,
+  },
 ];
 
 export const devSkills = [

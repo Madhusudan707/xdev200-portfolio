@@ -16,11 +16,20 @@ export const NavBar: React.FC = () => {
           />
         </Anchor>
         <FlexBoxContainer className="flex gap-x-12">
-          {navbarData.map(({ id, hyperLinkText, link, target, rel }) => (
-            <Link key={id} href={link} target={target} rel={rel} className="">
-              {hyperLinkText}
-            </Link>
-          ))}
+          {navbarData.map(
+            ({ id, hyperLinkText, link, target, rel, isShow, isDownload }) =>
+              isShow && (
+                <Anchor
+                  key={id}
+                  href={link}
+                  target={target}
+                  rel={rel}
+                  isDownload={isDownload}
+                >
+                  {hyperLinkText}
+                </Anchor>
+              )
+          )}
         </FlexBoxContainer>
       </FlexBoxContainer>
     </nav>

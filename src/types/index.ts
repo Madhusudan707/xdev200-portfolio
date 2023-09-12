@@ -23,6 +23,7 @@ export type AnchorProps = {
   target?: string;
   children: React.ReactNode;
   className?: string;
+  isDownload?: boolean;
 };
 
 export type FlexBoxContainerProps = {

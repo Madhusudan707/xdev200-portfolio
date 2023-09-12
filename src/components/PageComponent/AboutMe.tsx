@@ -47,18 +47,21 @@ export const AboutMe = () => {
           ))}
         </FlexBoxContainer>
         <FlexBoxContainer className="space-x-4 w-1/3 px-4">
-          {devExternalInfo.map(({ id, hyperlink, link, target, rel }) => (
-            <Anchor key={id} href={link} target={target} rel={rel} className="">
-              <Image
-                key={id}
-                src={`${assetPath.path}${hyperlink}`}
-                alt="profile"
-                width="48"
-                height="48"
-                className=" h-full object-cover object-center"
-              />
-            </Anchor>
-          ))}
+          {devExternalInfo.map(
+            ({ id, isShow, hyperlink, link, target, rel }) =>
+              isShow && (
+                <Anchor key={id} href={link} target={target} rel={rel}>
+                  <Image
+                    key={id}
+                    src={`${assetPath.path}${hyperlink}`}
+                    alt="profile"
+                    width="48"
+                    height="48"
+                    className=" h-full object-cover object-center"
+                  />
+                </Anchor>
+              )
+          )}
         </FlexBoxContainer>
       </FlexBoxContainer>
     </>

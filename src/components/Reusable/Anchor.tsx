@@ -8,9 +8,17 @@ export const Anchor: React.FC<AnchorProps> = ({
   rel,
   children,
   className,
+  isDownload,
 }) => {
   return (
-    <Link id={id} href={href} target={target} rel={rel} className={className}>
+    <Link
+      id={id}
+      href={href}
+      target={target}
+      rel={rel}
+      className={className}
+      download={isDownload && href}
+    >
       {children}
     </Link>
   );
