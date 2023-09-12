@@ -25,30 +25,101 @@ export const navbarData = [
   },
   {
     id: 4,
-    hyperLinkText: "Blog",
-    link: "https://xdev.hashnode.dev",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    isExternal: true,
-  },
-  {
-    id: 5,
     hyperLinkText: "GitHub",
     link: "https://github.com/Xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
-    isExternal: true,
   },
   {
-    id: 6,
+    id: 5,
     hyperLinkText: "Linkedin",
     link: "https://linkedin.com/in/xdev200",
     target: "_blank",
     rel: "noopener noreferrer",
-    isExternal: true,
+  },
+  {
+    id: 6,
+    hyperLinkText: "Blog",
+    link: "https://xdev.hashnode.dev",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
 ];
 
+export const devExternalInfo = [
+  {
+    id: 1,
+    hyperlink: "github.png",
+    link: "https://github.com/Xdev200",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  {
+    id: 2,
+    hyperlink: "linkedin.png",
+    link: "https://linkedin.com/in/xdev200",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  // {
+  //   id: 3,
+  //   hyperlink: "Blog",
+  //   link: "https://xdev.hashnode.dev",
+  //   target: "_blank",
+  //   rel: "noopener noreferrer",
+  // },
+];
+
+export const devSkills = [
+  {
+    id: 1,
+    title: "HTML",
+    img24: "html524.png",
+    img48: "html548.png",
+  },
+  {
+    id: 2,
+    title: "CSS",
+    img24: "css324.png",
+    img48: "css348.png",
+  },
+  {
+    id: 3,
+    title: "Tailwind",
+    img24: "tailwind24.png",
+    img48: "tailwind48.png",
+  },
+  {
+    id: 4,
+    title: "JavaScript",
+    img24: "javascript24.png",
+    img48: "javascript48.png",
+  },
+  {
+    id: 5,
+    title: "TypeScript",
+    img24: "typescript24.png",
+    img48: "typescript48.png",
+  },
+  {
+    id: 6,
+    title: "ReactJs",
+    img24: "reactjs24.png",
+    img48: "reactjs48.png",
+  },
+  {
+    id: 7,
+    title: "NextJs",
+    img24: "nextjs24.png",
+    img48: "nextjs48.png",
+  },
+  {
+    id: 8,
+    title: "Firebase",
+    img24: "firebase24.png",
+    img48: "firebase48.png",
+  },
+];
 export const devData = {
   name: "Madhusudan Das",
   Designation: "Senior Frontend Engineer",
@@ -75,6 +146,8 @@ export const devData = {
 
 export const assetPath = {
   path: "/assets/",
+  langpath24: "/assets/langicons/24/",
+  langpath48: "/assets/langicons/48/",
 };
 
 export const projectData = [

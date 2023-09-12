@@ -4,9 +4,11 @@ import {
   Paragraph,
   ProfileImage,
   Title,
+  Anchor,
 } from "@/components";
+import Image from "next/image";
 
-import { devData } from "@/LocalData";
+import { devData, devExternalInfo, devSkills, assetPath } from "@/LocalData";
 export const AboutMe = () => {
   return (
     <>
@@ -20,6 +22,18 @@ export const AboutMe = () => {
               text={devData.Designation}
               className="text-xl text-center"
             />
+            <FlexBoxContainer className="justify-center gap-x-2">
+              {devSkills.map(({ id, img48 }) => (
+                <Image
+                  key={id}
+                  src={`${assetPath.langpath48}${img48}`}
+                  alt="profile"
+                  width="24"
+                  height="24"
+                  className=" h-full object-cover object-center"
+                />
+              ))}
+            </FlexBoxContainer>
           </FlexBoxContainer>
         </FlexBoxContainer>
 
@@ -30,6 +44,20 @@ export const AboutMe = () => {
               text={content}
               className="text-justify text-sm"
             />
+          ))}
+        </FlexBoxContainer>
+        <FlexBoxContainer className="space-x-4 w-1/3 px-4">
+          {devExternalInfo.map(({ id, hyperlink, link, target, rel }) => (
+            <Anchor key={id} href={link} target={target} rel={rel} className="">
+              <Image
+                key={id}
+                src={`${assetPath.path}${hyperlink}`}
+                alt="profile"
+                width="48"
+                height="48"
+                className=" h-full object-cover object-center"
+              />
+            </Anchor>
           ))}
         </FlexBoxContainer>
       </FlexBoxContainer>
