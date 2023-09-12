@@ -23,11 +23,11 @@ export const AboutMe = () => {
               className="text-xl text-center"
             />
             <FlexBoxContainer className="justify-center gap-x-2">
-              {devSkills.map(({ id, img48 }) => (
+              {devSkills.map(({ id, img48, title }) => (
                 <Image
                   key={id}
                   src={`${assetPath.langpath48}${img48}`}
-                  alt="profile"
+                  alt={title}
                   width="24"
                   height="24"
                   className=" h-full object-cover object-center"
