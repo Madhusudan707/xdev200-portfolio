@@ -1,3 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a19ea1;
+    /* Purple thumb color */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #797979;
+    /* Track color */
+}
