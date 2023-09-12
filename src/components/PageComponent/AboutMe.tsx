@@ -37,7 +37,7 @@ export const AboutMe = () => {
           </FlexBoxContainer>
         </FlexBoxContainer>
 
-        <FlexBoxContainer className="flex-col lg:w-6/12 lg:pl-28 lg:gap-y-6 px-4">
+        <FlexBoxContainer className="flex-col lg:w-6/12 lg:pl-28 lg:gap-y-6 gap-y-4 px-4">
           {devData.AboutMeDetails.map(({ id, content }) => (
             <Paragraph
               key={id}
